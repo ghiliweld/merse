@@ -1,8 +1,9 @@
-import argparse
+import sys
 from query import query
 from formatter import formatter
 
 # do cli parsing tings
+word = sys.argv[1]
 
 # pass arg parsed from cli into query function
 # results will be a dictionary w/ google, wikipedia and reddit as keys and links as values
