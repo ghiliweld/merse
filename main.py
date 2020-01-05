@@ -9,8 +9,8 @@ word = sys.argv[1]
 # results will be a dictionary w/ google, wikipedia and reddit as keys and links as values
 results = query(word)
 
-# formatter takes in results and returns approprietly formatted text to print
-message = formatter(results)
+# formatter takes in results and returns appropriately formatted text to print
+message = formatter(**results)
 
 # print message to cmd
 print(message)
